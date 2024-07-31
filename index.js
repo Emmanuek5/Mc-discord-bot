@@ -17,6 +17,8 @@ const path = require("path");
 const sqlite3 = require("sqlite3").verbose();
 const config = require("./config.json");
 const COLOURS = require("./utils/colours");
+const express = require("express");
+const app = express();
 let commands = [];
 let interactions = [];
 let commands_folder = path.join(__dirname, "commands");
@@ -369,3 +371,12 @@ function levenshteinDistance(s1, s2) {
 client.on("raw", (d) => manager.updateVoiceState(d));
 
 client.login(config.token);
+
+
+app.all("*",(req,res)=>{
+  res.send("Bot is running");
+})
+
+app.listen(process.env.PORT,()=>{
+  console.log("Server is running on port "+process.env.PORT);
+})
