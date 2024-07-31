@@ -115,17 +115,14 @@ client.clearCache = (folder) => {
 client.commands_folder = commands_folder;
 client.interactions_folder = interactions_folder;
 client.walkSync = walkSync;
-const spotify = new Spotify({
-  clientID: "4565f52db8734b11ab6803f45cae9f03",
-  clientSecret: "af5ed8d68e1a44a290d901eb77f6623d",
-});
+
 const manager = new Manager({
   nodes: config.lavalink_nodes,
   send(id, payload) {
     const guild = client.guilds.cache.get(id);
     if (guild) guild.shard.send(payload);
   },
-  plugins: [spotify], // Include the Spotify plugin in the plugins array
+ 
   defaultSearchPlatform: "youtube",
   autoPlay: true,
 });
