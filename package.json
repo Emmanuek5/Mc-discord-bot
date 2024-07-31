@@ -8,6 +8,7 @@
     "cli-progress": "^2.1.1",
     "discord-player": "^6.6.7",
     "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
     "erela.js": "^2.4.0",
     "erela.js-spotify": "^1.2.0",
     "express": "^4.19.2",

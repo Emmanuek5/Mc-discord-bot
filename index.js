@@ -26,6 +26,7 @@ let interactions_folder = path.join(__dirname, "interactions");
 const { Manager } = require("erela.js");
 const Spotify = require("erela.js-spotify"); // Import the Spotify plugin
 const Moderation = require("./utils/Moderation");
+require("dotenv").config();
 
 const db = new sqlite3.Database("database.db");
 const client = new Client({
