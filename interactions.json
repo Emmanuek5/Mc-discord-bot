@@ -1,0 +1,10 @@
+[
+  {
+    "name": "close_ticket",
+    "description": "Close a ticket"
+  },
+  {
+    "name": "open_ticket",
+    "description": "Open a ticket"
+  }
+]

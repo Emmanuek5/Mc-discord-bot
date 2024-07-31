@@ -1,0 +1,114 @@
+[
+  {
+    "name": "chatmod",
+    "description": "Enable or Disable chatmod",
+    "aliases": [
+      "cm"
+    ],
+    "usage": "chatmod <on/off> || cm toggle",
+    "required_permission": "1099511627776"
+  },
+  {
+    "name": "reload",
+    "aliases": [
+      "r"
+    ],
+    "required_permission": "16",
+    "description": "Reloads commands and interactions"
+  },
+  {
+    "name": "default_role",
+    "description": "Set the default role for the server",
+    "options": [
+      "add",
+      "remove",
+      "list"
+    ],
+    "aliases": [],
+    "required_permission": "16"
+  },
+  {
+    "name": "welcome-channel",
+    "description": "Set welcome channel",
+    "aliases": [
+      "wc"
+    ],
+    "usage": "welcome-channel <channel> || wc <channel>",
+    "required_permission": "ManageChannels"
+  },
+  {
+    "name": "welcome-message",
+    "description": "Set welcome message",
+    "aliases": [
+      "wm"
+    ],
+    "usage": "welcome-message <message> || wm <message>",
+    "required_permission": "ManageChannels"
+  },
+  {
+    "name": "help",
+    "description": "Get help with commands",
+    "aliases": [
+      "h"
+    ]
+  },
+  {
+    "name": "serverinfo",
+    "description": "Get information about the server"
+  },
+  {
+    "name": "server",
+    "description": "Get Information about the Minecraft Server or Any Other Server",
+    "usage": "server <ip> <port>"
+  },
+  {
+    "name": "pause",
+    "description": "Pause the music",
+    "aliases": [
+      "resume"
+    ]
+  },
+  {
+    "name": "play",
+    "description": "Play a song",
+    "aliases": [
+      "p",
+      "music"
+    ]
+  },
+  {
+    "name": "record",
+    "description": "Record your voice channel",
+    "aliases": [
+      "rec"
+    ],
+    "usage": "record ",
+    "required_permission": "8"
+  },
+  {
+    "name": "stop",
+    "description": "Stop the music",
+    "aliases": [
+      "s"
+    ]
+  },
+  {
+    "name": "transcribe",
+    "description": "Record your voice channel and summarize what was said",
+    "aliases": [
+      "t"
+    ],
+    "usage": "transcribe ",
+    "required_permission": "8"
+  },
+  {
+    "name": "ping",
+    "description": "Ping Pong!"
+  },
+  {
+    "name": "ticket_button",
+    "description": "Create A Ticket Button For The Server",
+    "aliases": [],
+    "required_permission": "16"
+  }
+]

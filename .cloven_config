@@ -1,0 +1,2 @@
+SERVER_ID = 48566d1f
+SKIP_FILES= config.json,database.db
