@@ -79,6 +79,8 @@ process.on("uncaughtException", (err, origin) => {
   );
 });
 
+
+
 const walkSync = (dir, array) => {
   let files = fs.readdirSync(dir);
   files.forEach((file) => {
